@@ -1,7 +1,4 @@
-// document.querySelectorAll('[data-bs-toggle="popover"]')
-//   .forEach(popover => {
-//     new bootstrap.Popover(popover)
-//   })
+const baseUrl =  `http://localhost:5005/`;
 
 document.addEventListener("DOMContentLoaded", function() {
   getProductMetadata()
@@ -37,7 +34,7 @@ function getProductsByCategory() {
         }
       }
   };
-  xhttp.open("GET", "http://localhost:5005/get_meta_data/get_products_by_category", true);
+  xhttp.open("GET", `${baseUrl}get_meta_data/get_products_by_category`, true);
   xhttp.send();
 }
 
@@ -87,7 +84,7 @@ function getFeaturedProducts(id) {
         }
       }
   };
-  xhttp.open("POST", `http://localhost:5005/get_meta_data/featured_products?tool_type_id=${id}`, true);
+  xhttp.open("POST", `${baseUrl}get_meta_data/featured_products?tool_type_id=${id}`, true);
   xhttp.send();
 }
 
@@ -137,7 +134,7 @@ function getProductMetadata() {
         }
       }
   };
-  xhttp.open("GET", `http://localhost:5005/get_meta_data/`, true);
+  xhttp.open("GET", `${baseUrl}get_meta_data/`, true);
   xhttp.send();
 }
 

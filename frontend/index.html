@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>UITOUX</title>
+</head>
+
+<body style="background-color: rgb(253, 252, 252);">
+  <div class="container-fluid" style="background-color: #ffffff;">
+    <div class="container px-5 mx-auto">
+    <nav class="navbar navbar-expand-lg" >
+      <div class="container-fluid" style="background-color: #ffffff;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item topbarA">
+              <a class="nav-link" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item topbarA">
+              <a class="nav-link" aria-current="page" href="#">Contacts</a>
+            </li>
+            <li class="nav-item topbarA">
+              <a class="nav-link" aria-current="page" href="#">Store Location</a>
+            </li>
+            <li class="nav-item topbarA">
+              <a class="nav-link" aria-current="page" href="#">Track Order</a>
+            </li>
+            <li class="nav-item topbarA">
+              <a class="nav-link" aria-current="page" href="#">Blog</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item dropdown topbarA">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
+                Compare: <span class="topbarAText">2</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown topbarA">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Currency: <span class="topbarAText">USD</span>
+              </a>
+              <ul class="dropdown-menu" id="currency-element">
+              </ul>
+            </li>
+            <li class="nav-item dropdown topbarA">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Language: <span class="topbarAText">US</span>
+              </a>
+              <ul class="dropdown-menu" id="language-element">
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar">
+      <div class="container-fluid" style="background-color: #ffffff;">
+        <form class="d-flex" role="search">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Bootstrap" width="100" >
+          </a>
+          <select class="form-select form-select-sm me-2" aria-label="Small select example" id="select-vehicle" style="background-color: rgb(246, 238, 8);font-weight: bold;width: 25%;">
+            <option selected>Select Vehicle</option>
+            <option value="1">Vehicle 1</option>
+            <option value="2">Vehicle 2</option>
+            <option value="3">Vehicle 3</option>
+          </select>
+          <input class="form-control me-2" type="search" placeholder="Enter Keyword or Part Number"
+            aria-label="Enter Keyword or Part Number" id="part-number" style="width: 500px;">
+          
+        </form>
+        <div class="item d-flex box-shadow-custom">
+          <img src="./images/svg/heart.svg" class="svgTopBarColor" width="30" height="30" alt="...">
+        </div>
+        <div class="item d-flex box-shadow-custom">
+          <img src="./images/svg/person.svg" class="svgTopBarColor" width="40" height="40" alt="...">
+          <div class="d-flex-column" style="margin-left: 1em;">
+            <p class="fs-12 pb-0 mb-0 loginText">Hello, Log In</p>
+            <p class="fs-12 pb-0 mb-0 shippingHead">My Account</p>
+          </div>
+        </div>
+        <div class="item d-flex box-shadow-custom">
+          <img src="./images/svg/cart.svg" class="svgTopBarColor" width="40" height="40" alt="...">
+          <div class="d-flex-column" style="margin-left: 1em;">
+            <p class="fs-12 pb-0 mb-0 loginText">Shopping Cart</p>
+            <p class="fs-12 pb-0 mb-0 shippingHead">$1468.60</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <div style="height: 1px;background-color: #a7a5a5;"></div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid" style="background-color: #ffffff;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-navicon"></i> <span class="glyphicon glyphicon-cloud"></span> <span class="navbarText">  Shop By Category</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Category 1</a></li>
+                <li><a class="dropdown-item navbarText" href="#">Category 2</a></li>
+                <li><a class="dropdown-item navbarText" href="#">Category 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbarText">Home</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Menu 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbarText">Megamenu</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Menu 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbarText">Shop</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Menu 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbarText">Blog</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Menu 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbarText">Account</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Menu 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbarText">Pages</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbarText" href="#">Menu 1</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
+                <span style="color: #a7a5a5;font-size: 14px;">Call Us:</span> <span style="color: #262726;font-weight: bold;font-size: 14px;">089252 97807</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+    </nav>
+    <div style="height: 1px;background-color: #a7a5a5;"></div>
+  </div>  
+  </div>
+  <div class="container px-5 py-2 mx-auto">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/slide-1.jpeg" class="d-block w-100" alt="...">
+          <div class="absolute-div">
+            <div class="carousel-caption">
+                <div class="container">
+                  <span class="carouselOff">30% OFF</span>
+                  <p class="py-3 carouselHeading">When Buying Parts With Installation</p>
+                  <p class="carouselText">Installation of parts in the services of our partners.</p>
+                  <button class="btn" style="width: 50%;background-color: rgb(45, 225, 165);color: azure;">Shop Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="./images/slide-1.jpeg" class="d-block w-100" alt="...">
+          <div class="absolute-div">
+            <div class="carousel-caption">
+                <div class="container">
+                  <span class="carouselOff">30% OFF</span>
+                  <p class="py-3 carouselHeading">When Buying Parts With Installation</p>
+                  <p class="carouselText">Installation of parts in the services of our partners.</p>
+                  <button class="btn" style="width: 50%;background-color: rgb(45, 225, 165);color: azure;">Shop Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="./images/slide-1.jpeg" class="d-block w-100" alt="...">
+          <div class="absolute-div">
+            <div class="carousel-caption">
+                <div class="container">
+                  <span class="carouselOff">30% OFF</span>
+                  <p class="py-3 carouselHeading">When Buying Parts With Installation</p>
+                  <p class="carouselText">Installation of parts in the services of our partners.</p>
+                  <button class="btn" style="width: 50%;background-color: rgb(45, 225, 165);color: azure;">Shop Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col brandColumn">
+          <img src="./images/brand-1.png" class="brandImage"/>
+          <p class="brandText">AIMPARTS</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-2.png" class="brandImage"/>
+          <p class="brandText">WINDENGINE</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-3.png" class="brandImage"/>
+          <p class="brandText">TURBOELECTRIC</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-4.png" class="brandImage"/>
+          <p class="brandText">STARTONE</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-5.png" class="brandImage"/>
+          <p class="brandText">BRANDIX</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-6.png" class="brandImage"/>
+          <p class="brandText">ABS-BRAND</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-7.png" class="brandImage"/>
+          <p class="brandText">GREATCIRCLE</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-8.png" class="brandImage"/>
+          <p class="brandText">JUSTROMB</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col brandColumn">
+          <img src="./images/brand-9.png" class="brandImage"/>
+          <p class="brandText">FASTWHEELS</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-10.png" class="brandImage"/>
+          <p class="brandText">STROYKA-X</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-11.png" class="brandImage"/>
+          <p class="brandText">MISSION-51</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-12.png" class="brandImage"/>
+          <p class="brandText">FUELCORP</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-13.png" class="brandImage"/>
+          <p class="brandText">REDGATE</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-14.png" class="brandImage"/>
+          <p class="brandText">BLOCKS</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-15.png" class="brandImage"/>
+          <p class="brandText">BLACKBOX</p>
+        </div>
+        <div class="col brandColumn">
+          <img src="./images/brand-16.png" class="brandImage"/>
+          <p class="brandText">SQUAREGARAGE</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex-column align-items-start py-5">
+      <button class="nav-link disabled" type="button" role="tab" aria-disabled="true" style="margin-bottom: -1.6em;font-weight: bold;font-size: 18px;">Featured Products</button>
+      <div class="nav flex-row-reverse nav-pills me-3 pb-1 mb-1" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="border-bottom: 1px solid gray;">
+        <button class="btn nav-link btn-sm" id="v-pills-plumbing-tab" data-bs-toggle="pill" data-bs-target="#v-pills-plumbing" type="button" role="tab" aria-controls="v-pills-plumbing" aria-selected="false" onclick="getFeaturedProducts(3)">Plumbing</button>
+        <button class="btn nav-link btn-sm" id="v-pills-handtools-tab" data-bs-toggle="pill" data-bs-target="#v-pills-handtools" type="button" role="tab" aria-controls="v-pills-handtools" aria-selected="false" onclick="getFeaturedProducts(2)">Hand Tools</button>
+        <button class="btn nav-link btn-sm" id="v-pills-powertools-tab" data-bs-toggle="pill" data-bs-target="#v-pills-powertools" type="button" role="tab" aria-controls="v-pills-powertools" aria-selected="false" onclick="getFeaturedProducts(1)">Power Tools</button>
+        <button class="btn nav-link btn-sm active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true" onclick="getFeaturedProducts(-1)">All</button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab" tabindex="0">
+          <div class="container py-4">
+            <div class="row row-cols-4" id="all-element">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-powertools" role="tabpanel" aria-labelledby="v-pills-powertools-tab" tabindex="0">
+          <div class="container py-4">
+            <div class="row row-cols-4" id="powertools-element">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-handtools" role="tabpanel" aria-labelledby="v-pills-handtools-tab" tabindex="0">
+          <div class="container py-4">
+            <div class="row row-cols-4" id="handtools-element">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-plumbing" role="tabpanel" aria-labelledby="v-pills-plumbing-tab" tabindex="0">
+          <div class="container py-4">
+            <div class="row row-cols-4" id="plumbing-element">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex">
+    <div class="w-50 p-2 bannerContainer">
+      <img src="./images/banner1.jpeg" class="rounded img-fluid" alt="...">
+      <div class="topCenter">
+        <div style="color: rgb(246, 238, 8);font-size: 20px;font-weight: bold;">MOTOR OILS</div>
+        <div>Synthetic motor oil with free shipping</div>
+        <div>Friction free life guaranteed</div><br/>
+        <button class="btn" style="width: 40%;background-color: red;color: azure;">Shop Now</button>
+      </div>
+    </div>
+    <div class="w-50 p-2 bannerContainer">
+      <img src="./images/banner2.jpeg" class="rounded img-fluid" alt="...">
+      <div class="topCenter">
+        <span style="background-color: rgb(246, 238, 8);font-size: 20px;font-weight: bold;color: #262726;padding: 5px;">SAVE UPTO $40</span>
+        <div class="py-2">Luxurious interior part for real aesthetes</div>
+        <div>Leather, fabric, ivory and more.</div><br/>
+        <button class="btn" style="width: 40%;background-color: red;color: azure;">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="container py-4">
+    <div class="row row-cols-3">
+      <div class="col">
+        <h5 class="productCategoryTitle">Top Rated Products</h5>
+        <hr/>
+        <div class="d-flex-column" id="top-rated-element">
+        </div>
+      </div>
+      <div class="col">
+        <h5 class="productCategoryTitle">Special Offers</h5>
+        <hr/>
+        <div class="d-flex-column" id="special-offers-element">
+        </div>
+      </div>
+      <div class="col">
+        <h5 class="productCategoryTitle">Bestsellers</h5>
+        <hr/>
+        <div class="d-flex-column" id="bestsellers-element">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr/>
+  </div>
+  <div class="container py-4">
+    <div class="row  row-cols-4">
+      <div class="col">
+        <div class="item d-flex box-shadow-custom" style="margin-bottom: 1em;">
+          <img src="./images/svg/free-delivery.svg" class="svgColor" width="45" height="40" alt="...">
+          <div class="d-flex-column" style="margin-left: 1em;">
+            <p class="fs-12 pb-0 mb-0 shippingHead">Free Shipping</p>
+            <p class="fs-12 shippingText">Free orders from $50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="item d-flex box-shadow-custom" style="margin-bottom: 1em;">
+          <img src="./images/svg/24-hours.svg" class="svgColor" width="45" height="40" alt="...">
+          </svg> 
+          <div class="d-flex-column" style="margin-left: 1em;">
+            <p class="fs-12 pb-0 mb-0 shippingHead">Support 24/7</p>
+            <p class="fs-12 shippingText">Call us anytime</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="item d-flex box-shadow-custom" style="margin-bottom: 1em;">
+          <img src="./images/svg/payment-security.svg" class="svgColor" width="45" height="40" alt="...">
+          <div class="d-flex-column" style="margin-left: 1em;">
+            <p class="fs-12 pb-0 mb-0 shippingHead">100% Safety</p>
+            <p class="fs-12 shippingText">Only secure payments</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="item d-flex box-shadow-custom" style="margin-bottom: 1em;">
+          <img src="./images/svg/tag.svg" class="svgColor" width="45" height="40" alt="...">
+          <div class="d-flex-column" style="margin-left: 1em;">
+            <p class="fs-12 pb-0 mb-0 shippingHead">Hot Offers</p>
+            <p class="fs-12 shippingText">Discounts upto 90%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="background-color: #3a3b3a;padding: 20px;">
+    <div class="container">
+      <div class="row  row-cols-4">
+        <div class="col-4">
+          <div>
+            <h4 class="footerHeading">Contact Us</h4>
+            <p class="footerText">Hi, we are always open for cooperation and suggestions, <br/>contact us in one the way below:</p>
+          </div>
+          <div class="row row-cols-2">
+            <div class="col">
+              <p class="footerText">PHONE NUMBER</p>
+              <p class="footerTextAddress">089252 97807</p>
+            </div>
+            <div class="col">
+              <p class="footerText">EMAIL ADDRESS</p>
+              <p class="footerTextAddress">careers@uitouxsolutions.com</p>
+            </div>
+          </div>
+          <div class="row row-cols-2">
+            <div class="col">
+              <p class="footerText">OUR LOCATION</p>
+              <p class="footerTextAddress">102, Athipalayam,<br/>
+              Ramakrishnapuram,<br/>
+              Chinnavedampatti,<br/>
+              Coimbatore, Tamil Nadu<br>
+              641049
+              </p>
+            </div>
+            <div class="col">
+              <p class="footerText">WORKING HOURS</p>
+              <p class="footerTextAddress">Mon-Fri 10:00am - 6:00pm</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div>
+            <h4 class="footerHeading">Information</h4>
+            <a href="#" class="footerTextA">About Us</a><br/>
+            <a href="#" class="footerTextA">Delivery Information</a><br/>
+            <a href="#" class="footerTextA">Privacy Policy</a><br/>
+            <a href="#" class="footerTextA">Brands</a><br/>
+            <a href="#" class="footerTextA">Contact Us</a><br/>
+            <a href="#" class="footerTextA">Returns</a><br/>
+            <a href="#" class="footerTextA">Site Map</a>
+          </div>
+        </div>
+        <div class="col-2">
+          <div>
+            <h4 class="footerHeading">My Account</h4>
+            <a href="#" class="footerTextA">Store Location</a><br/>
+            <a href="#" class="footerTextA">Order History</a><br/>
+            <a href="#" class="footerTextA">Wish List</a><br/>
+            <a href="#" class="footerTextA">Newsletter</a><br/>
+            <a href="#" class="footerTextA">Special Offers</a><br/>
+            <a href="#" class="footerTextA">Gift Certificates</a><br/>
+            <a href="#" class="footerTextA">Affiliate</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <!-- <div> -->
+            <h4 class="footerHeading">Newsletter</h4>
+            <p class="footerText">Enter your email address below to subscribe to our newsletter<br/>and keep up to date with discounts and special offers.</p>
+            <form class="d-flex" role="search">
+              <input class="form-control" type="search" placeholder="user@example.com" aria-label="user@example.com" id="subscribe">&nbsp;
+              <button type="submit" class="form-control btn m2-2" style="width: 40%;background-color: rgb(45, 225, 165);color: azure;">Subscribe</button>
+            </form>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="background-color: #262726;padding: 20px;color: aliceblue;">
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col"><span class="footerTextA">Designed by</span> <span class="footerTextAddress">UITOUX Solutions</span></div>
+        <div class="col" style="text-align: right;">
+          <img src="images/payments.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
